@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>PonPonPon</title>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+  <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
+  <link rel="icon" href="favcon.png" type="image/png" sizes="16x16">
+  </head>
+  <body>
+    <a-assets>
+      <audio id="ponponpon" src="ponponpon.mp3" preload="auto" autoplay="true" loop = "true"></audio>
+    </a-assets>
+    <a-scene>
+      <a-sky src="#sky"></a-sky>
+      <!-- In front -->
+      <a-entity position="-1 1 -4" geometry="primitive:box;" material="shader:gif;src:url(https://media.giphy.com/media/TgnTjaSodgLLi/giphy.gif);" class="gif-box"><a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-entity>
+      <!-- To your left -->
+      <a-entity position="-4 3 0" geometry="primitive:box;" material="shader:gif;src:url(https://media.giphy.com/media/JbZeNJtst2k6Y/giphy.gif);" class="gif-box"><a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-entity>
+      <!-- Left center -->
+      <a-entity position="-6 3 -8" geometry="primitive:box;" material="shader:gif;src:url(https://media.giphy.com/media/tpnzPjGQ0thcY/giphy.gif);" class="gif-box"><a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-entity>
+      <!-- To your right -->
+      <a-entity position="4 3 0" geometry="primitive:box;" material="shader:gif;src:url(https://78.media.tumblr.com/62e5b14363954af33b0ec2771dc2e8bf/tumblr_n1qfznebVd1sb27vqo1_500.gif);" class="gif-box"><a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-entity>
+      <!-- Right center -->
+      <a-entity position="4 3 -7" geometry="primitive:box;" material="shader:gif;src:url(https://media.giphy.com/media/3CtQUQbkKDSy4/giphy.gif);" class="gif-box"><a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite" easing="linear"></a-animation></a-entity>
+      <!-- Top right -->
+      <a-image position=" 2 5 -3" material="shader:gif;src:url(https://media.giphy.com/media/6plUXOsjyH9io/giphy.gif);"></a-image>
+      <!-- Behind -->
+      <a-image position="0 1 200" material="shader:gif;src:url(https://media.giphy.com/media/bNPdKhrW5V79K/giphy.gif);" width="300" height="300" ></a-image>
+      <!-- 360 Background -->
+      <a-sky material="shader:gif;src:url(https://media.giphy.com/media/jZNlngbeUAwcU/giphy.gif);"></a-sky>
+      <!-- Audio -->
+      <a-entity sound="src: #ponponpon"></a-entity>
+    </a-scene>
+  </body>
+</html>

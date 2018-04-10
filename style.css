@@ -1,0 +1,19 @@
+body
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+#button {
+    background-color: #2471A3;
+    border-radius: 4px;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 13px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#button:hover {
+  background-color: #A9CCE3;
+  color: #FFFFFF;
+}
